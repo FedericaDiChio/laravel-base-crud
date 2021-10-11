@@ -1,0 +1,33 @@
+// TITLE SQUARE
+.blu-square {
+    position: absolute;
+    @include uppercase('white');
+    @include center;
+    bottom: 300px;
+    height: 40px;
+    width: 270px;
+    background-color: $blue;
+}
+
+
+// CONTAINER CARD & CARD 
+#products {
+    background-color: $grey;
+    .container-card {
+        padding-top: 50px;
+        flex-wrap: wrap;
+        @include center('horizontal');        
+            .card {
+                padding: 15px;
+                flex-basis: 200px;
+                address {
+                    @include uppercase('white');
+                    font-style: normal;
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+            }
+    }
+}
+
+

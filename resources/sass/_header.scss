@@ -1,0 +1,64 @@
+// HEADER 
+header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+// NAVBAR TOP 
+#top-nav {
+    height: 20px;
+    background-color: $blue;
+    .topnav-links {
+        text-align: end;
+        a {
+            @include uppercase('white');
+            font-size: 10px;
+            padding: 20px;
+            .fa-registered {
+                font-size: 8px;
+            }
+        }
+    }
+}   
+    
+// NAVBAR BOTTOM 
+#bottom-nav {
+    height: 100px;
+    background-color: $white;
+    #header-logo {
+        width: 60px;
+    }
+    .row {
+        height: 100px;
+        @include center('between');
+// MENU         
+        ul {
+            @include center('vertical');
+            a {
+                @include uppercase('grey');
+                padding: 15px;
+            }
+            .fa-sort-down {
+                color: $blue;
+            }
+        }  
+// ICONS SEARCH         
+        .icon-search {
+            @include center('end');
+            border-bottom: 2px solid $blue;
+            width: 120px;
+            padding-bottom: 3px;
+            i {
+                margin-left: 5px;
+            }
+        }  
+    }
+} 
+
+
+
+  
+  

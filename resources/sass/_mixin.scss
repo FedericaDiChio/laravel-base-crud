@@ -1,0 +1,27 @@
+// FLEX 
+@mixin center($type: "both"){
+    display: flex;
+    @if $type == "vertical" {
+        align-items: center;
+    } @else if $type == "horizontal" {
+        justify-content: center;
+    } @else if $type == "end" {
+        justify-content: flex-end;
+    }@else if $type == "between"{
+        align-items: center;
+        justify-content: space-between;
+    }@else {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// FONT UPPERCASE 
+@mixin uppercase($type: 'both') {
+    text-transform: uppercase;
+    @if $type == 'white'{ 
+        color: $white;
+    } @else if $type == 'grey' {
+        color: $grey;
+    }
+}

@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  padding-top: 120px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#jumbotron {
+  background-image: url("/images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 315px;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#top-nav {
+  height: 20px;
+  background-color: #0282f9;
+}
+#top-nav .topnav-links {
+  text-align: end;
+}
+#top-nav .topnav-links a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+  padding: 20px;
+}
+#top-nav .topnav-links a .fa-registered {
+  font-size: 8px;
+}
+
+#bottom-nav {
+  height: 100px;
+  background-color: white;
+}
+#bottom-nav #header-logo {
+  width: 60px;
+}
+#bottom-nav .row {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#bottom-nav .row ul {
+  display: flex;
+  align-items: center;
+}
+#bottom-nav .row ul a {
+  text-transform: uppercase;
+  color: #1c1c1c;
+  padding: 15px;
+}
+#bottom-nav .row ul .fa-sort-down {
+  color: #0282f9;
+}
+#bottom-nav .row .icon-search {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px solid #0282f9;
+  width: 120px;
+  padding-bottom: 3px;
+}
+#bottom-nav .row .icon-search i {
+  margin-left: 5px;
+}
+
+.blu-square {
+  position: absolute;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 300px;
+  height: 40px;
+  width: 270px;
+  background-color: #0282f9;
+}
+
+#products {
+  background-color: #1c1c1c;
+}
+#products .container-card {
+  padding-top: 50px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+#products .container-card .card {
+  padding: 15px;
+  flex-basis: 200px;
+}
+#products .container-card .card address {
+  text-transform: uppercase;
+  color: white;
+  font-style: normal;
+  margin-top: 10px;
+  font-size: 12px;
+}
