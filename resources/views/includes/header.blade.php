@@ -16,7 +16,7 @@
                 <a href=""><img src="{{ asset('images/dc-logo.png') }}" alt="header-logo" id="header-logo"></a>
                 <ul>
                     <li><a href="">Characters</a></li>
-                    <li><a href="">Comics</a></li>
+                    <li><a href="{{  }}">Comics</a></li>
                     <li><a href="">Movies</a></li>
                     <li><a href="">Tv</a></li>
                     <li><a href="">Games</a></li>
