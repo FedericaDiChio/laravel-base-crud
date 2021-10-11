@@ -7,7 +7,7 @@
                 <h1>Current Series</h1>
             </div>            
             <div class="container-card">
-                @forelse ($comics as $comic)
+                @foreach ($comics as $comic)
                     <div class="card">
                         <figure>
                             <a href=""></a>
@@ -16,11 +16,8 @@
                         </figure>
                         <address>{{ $comic->series }}</address>
                     </div>  
-                @endforelse
+                @endforeach
             </div>
-            @empty
-                <p>Non ci sono fumetti!</p>
-            @endempty
         </div>
     </section>
 @endsection

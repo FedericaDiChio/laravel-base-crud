@@ -13,18 +13,18 @@
         <div class="container">
             <div class="row">
                 {{-- MENU --}}
-                <a href=""><img src="{{ asset('images/dc-logo.png') }}" alt="header-logo" id="header-logo"></a>
+                <a href="{{ route('home')}}"><img src="{{ asset('images/dc-logo.png') }}" alt="header-logo" id="header-logo"></a>
                 <ul>
                     <li><a href="">Characters</a></li>
-                    <li><a href="{{  }}">Comics</a></li>
-                    <li><a href="">Movies</a></li>
-                    <li><a href="">Tv</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Collectibles</a></li>
-                    <li><a href="">Videos</a></li>
-                    <li><a href="">Fans</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Shop <i class="fas fa-sort-down"></i></a></li>
+                    <li><a  href="{{ route('comics.index') }}">Comics</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Tv</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Collectibles</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Fans</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Shop <i class="fas fa-sort-down"></i></a></li>
                 </ul>
                 {{-- ICONS SEARCH  --}}
                 <div class="icon-search">
