@@ -2,7 +2,7 @@
 
 @section('content')
  
-    @include('comics.form')
+    @include('includes.comics.form')
 
 {{-- INCLUDERE IL FORM  --}}
 @endsection
