@@ -1,4 +1,4 @@
-<form method="GET">
+<form method="POST" action="{{route('comics.store')}}">
     @csrf
     <div>
         <label for="title">Titolo fumetto</label>
@@ -15,8 +15,8 @@
     <div>
         <label for="type">Tipologia</label>
         <select name="type" id="type">
-            <option value="">Comic Book</option>
-            <option value="">Graphic Novel</option>
+            <option>Comic Book</option>
+            <option>Graphic Novel</option>
         </select>
         
     </div>
@@ -25,8 +25,13 @@
         <input type="date" id="sale_date" name="sale_date">
     </div>
     <div>
-        <label for="title">Descrizione</label>
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <label for="thumb">Inserisci un'immagine</label>
+        <input type="text" id="thumb" name="thumb">
+    </div>
+    <div>
+        <label for="decription">Descrizione</label>
+        <textarea  id="description" name="description" cols="30" rows="10"></textarea>
+        
     </div>
     <div>
         <button type="submit">Inserisci fumetto</button>
