@@ -1,4 +1,5 @@
 <form method="GET">
+    @csrf
     <div>
         <label for="title">Titolo fumetto</label>
         <input type="text" id="title" name="title">
