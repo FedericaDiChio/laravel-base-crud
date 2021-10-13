@@ -7,16 +7,18 @@
                 <h1>Current Series</h1>
             </div>            
             <div class="container-card">
-                @foreach ($comics as $comic)
+                @forelse ($comics as $comic)
                     <div class="card">
                         <figure>
                             <a href="{{ route('comics.show', $comic->id) }}">
-                                <img src="{{ $comic->thumb }}" alt="">
+                                <img src="{{ $comic->thumb }}" alt="comic-cover">
                             </a>
                         </figure>
                         <address>{{ $comic->series }}</address>
-                    </div>  
-                @endforeach
+                    </div> 
+                    @empty 
+                    <p>Non ho trovato fumetti @if(!empty($search)) @endif</p>   
+                @endforelse
             </div>
         </div>
     </section>

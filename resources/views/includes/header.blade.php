@@ -25,12 +25,17 @@
                     <li><a href="#">Fans</a></li>
                     <li><a href="#">News</a></li>
                     <li><a href="#">Shop <i class="fas fa-sort-down"></i></a></li>
+                    <li><a href="{{ route('comics.create')}}">Insert comic</a></li>
                 </ul>
                 {{-- ICONS SEARCH  --}}
-                <div class="icon-search">
+                <form method='GET'  >
+                    <input type='text' placeholder='Cerca' name='search' >
+                    <button type='submit' >Cerca </button>
+                </form>     
+                {{-- <div class="icon-search">
                     <div>Search</div>
                     <i class="fas fa-search"></i>
-                </div>
+                </div> --}}
             </div>
         </div>    
     </nav>

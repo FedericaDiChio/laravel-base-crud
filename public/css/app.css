@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -117,6 +117,7 @@ header {
 
 #products {
   background-color: #1c1c1c;
+  height: 100vh;
 }
 #products .container-card {
   padding-top: 50px;
@@ -134,4 +135,47 @@ header {
   font-style: normal;
   margin-top: 10px;
   font-size: 12px;
+}
+
+.container-small {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container-small .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-small .row h1 {
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+.container-small .row .col-left {
+  padding-right: 30px;
+  flex-basis: 85%;
+}
+.container-small .row .adv {
+  text-align: end;
+  text-transform: uppercase;
+  color: #1c1c1c;
+}
+.container-small .row img {
+  width: 100%;
+}
+
+.green-box {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #55ba59;
+}
+.green-box .price {
+  color: white;
+}
+.green-box .us-price {
+  color: #baf980;
+}
+
+.description {
+  color: #1c1c1c;
+  padding-top: 20px;
 }

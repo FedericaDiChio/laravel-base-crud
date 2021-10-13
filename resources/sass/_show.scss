@@ -1,0 +1,41 @@
+.container-small {
+    max-width: 800px;
+    margin: 0 auto;
+    .row {
+        @include center;
+        h1 {
+            padding-top: 50px;
+            @include uppercase;
+        }
+        .col-left {
+            padding-right: 30px;
+            flex-basis: 85%;
+        }
+        .adv {
+            text-align: end;
+            @include uppercase('grey');
+        } 
+        img {
+            width: 100%;
+            
+        }
+    }
+}
+
+
+.green-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: $green;
+    .price {
+        color: $white;
+    }
+    .us-price {
+        color: $light-green;
+    }
+}
+
+.description {
+    color: $grey;
+    padding-top: 20px;
+}
