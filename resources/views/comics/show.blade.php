@@ -5,7 +5,19 @@
     <div class="row">
         <div class="col-left">
             <h1>{{ $comic->title }}</h1>
-            <small><a href="{{route('comics.edit', $comic->id)}}"><i class="fas fa-pencil-alt"></i></a></small>
+            {{-- CHANGE  --}}
+            <div class="btn-change">
+                <a href="{{route('comics.edit', $comic->id)}}">Change <i class="fas fa-pencil-alt"></i></a>
+            </div>
+            {{-- BUTTON DELETE  --}}
+            <div class="btn-delete">
+                <form method="POST" action="{{route('comics.destroy', $comic->id)}}">
+                    @method('DELETE')
+                    @csrf
+                    <button type="submit" class="cancel-btn">Delete</button>
+                </form>
+            </div>
+            {{-- PRODUCT SHOW  --}}
             <div class="green-box">
                 <span class="us-price">U.S. Price: </span>
                 <span class="price">${{ $comic->price }}</span>

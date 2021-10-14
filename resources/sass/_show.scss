@@ -39,3 +39,9 @@
     color: $grey;
     padding-top: 20px;
 }
+
+.btn-change {
+    background-color: turquoise;
+    width: 80px; 
+    @include button;
+}

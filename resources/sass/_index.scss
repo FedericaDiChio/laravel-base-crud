@@ -31,4 +31,10 @@
     }
 }
 
+.cancel-btn {
+    background-color:tomato;
+    border: 1px solid tomato;
+    @include button;
+}
+
 
