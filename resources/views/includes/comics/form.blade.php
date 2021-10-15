@@ -1,3 +1,14 @@
+@if($errors->any())
+    <div class="alert">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        </ul>
+            @endforeach
+    </div>
+
+@endif 
+
 @if($comic->exists)
     <form method="POST" action="{{route('comics.update', $comic->id)}}">
         @method('PATCH')
@@ -7,7 +18,7 @@
     @csrf
         <div>
             <label for="title">Titolo fumetto</label>
-            <input type="text" id="title" name="title" value="{{ $comic->title}}">
+            <input type="text" id="title" name="title" value="{{ $comic->title }}">
         </div>
         <div>
             <label for="price">Prezzo</label>

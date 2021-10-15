@@ -41,6 +41,13 @@ h2 {
   font-size: 50px;
 }
 
+.alert {
+  background-color: salmon;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
 header {
   z-index: 1;
   position: fixed;
