@@ -102,8 +102,6 @@ class ComicController extends Controller
             'series' => 'required',
             // 'type' => 'required',
             'thumb' => 'required',
-        ],
-        [    
             // 'description' => 'required',
             'title' => ['required', Rule::unique('comics')->ignore($comic->id)],
         ]);
